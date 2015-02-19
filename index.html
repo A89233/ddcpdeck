@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MotorTrend Car Analysis</title>
+  <meta charset="utf-8">
+  <meta name="description" content="MotorTrend Car Analysis">
+  <meta name="author" content="Venkat Gullapalli">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/highlighters/highlight.js/css/default.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/interactive/css/aceeditor.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/js/slides" 
+    src="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>MotorTrend Car Analysis</h1>
+    <h2>Analysis with Shiny Application</h2>
+    <p>Venkat Gullapalli<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2><center>Synopsis</center></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br>
+MotorTrend Car Data Analysis product is built in shiny to do the following:
+<br></p>
+
+<ul>
+<li>Provide interface to filter cars based on weight and engine size.</li>
+<li>Analyze mtcars dataset in R, and provide results.</li>
+<li>Provide reactive results in graphical format and text.</li>
+<li>User can compare by selecting different cars.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2><center>Input/Output</center></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><em>Input</em></p>
+
+<ul>
+<li>Weight of car - Slider to set min and max weight of cars.</li>
+<li>Engine size of car - Slider to set min and max size of engine of cars.</li>
+<li>Car from selection - based on Weight and Size of engine.</li>
+</ul>
+
+<p><em>Output</em></p>
+
+<ul>
+<li>Graph showing mpg vs weight of cars.</li>
+<li>Graph showing mpg vs engine size of cars.</li>
+<li>Graph showing speed vs weight of cars.</li>
+<li>Graph showing speed vs engine size of cars.</li>
+<li>In all above graphs selected car is shown annotated with a symbol.</li>
+<li>Conclusion has details of car selected.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2><center>Dataset - mtcars</center></h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Data consists of - (results below are calculated by R code using mtcars data)</p>
+
+<ul>
+<li>11 (4-cylinder cars), 7 (6-cylinder) cars and 14 (8-cylinder) cars.</li>
+<li>Fastest car is Ford Pantera L that can go 1/4 mile in 14.5 seconds</li>
+<li>Slowest car is Merc 230 that can go 1/4 mile in 22.9 seconds</li>
+<li>Toyota Corolla has the best economy of 33.9 mpg</li>
+<li>Cadillac Fleetwood, Lincoln Continental has the worst economy of 10.4 mpg </li>
+<li>Heaviest car at 5424 lbs is Lincoln Continental</li>
+<li>Lightest car at 1513 lbs is Lotus Europa</li>
+<li>Cadillac Fleetwood has maximum engine capacity of 472 cubic inches </li>
+<li>Toyota Corolla has minimum engine capacity of 71.1 cubic inches </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2><center><a href="https://a89233.shinyapps.io/CarAnalysis/">MotorTrend Car Data Analysis</a><center></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><center>(click on link above to access shiny app)</center></p>
+
+<div style='text-align: center;'>
+    <img height='480' width='800' src='assets/img/ShinyApp.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='<center>Synopsis</center>'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='<center>Input/Output</center>'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='<center>Dataset - mtcars</center>'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='<center><a href="https://a89233.shinyapps.io/CarAnalysis/">MotorTrend Car Data Analysis</a><center>'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/interactive/js/ace/js/ace.js"></script>
+<script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/interactive/js/opencpu-0.5.js"></script>
+<script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/interactive/js/interactive.js"></script>
+
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
